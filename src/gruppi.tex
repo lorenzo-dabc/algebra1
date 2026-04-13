@@ -645,16 +645,16 @@ La sezione tratta gruppi abeliani, quindi si userà principalmente la notazione 
 \begin{proposition}{(*) centro di un prodotto semidiretto}
     Sia $G\cong H \rtimes_{\varphi} K$ con $H$ abeliano. Allora
     \[
-    Z(G) \cong \left( \bigcap_{k \in K} Fix(\varphi_k) \right) \times (\ker(\varphi) \cap Z(K)).
+    Z(G) \cong \left( \bigcap_{k \in K} \Fix(\varphi_k) \right) \times (\ker(\varphi) \cap Z(K)).
     \]
 \end{proposition}
 \begin{proof}
     Un elemento $(a, b)$ sta nel centro di $G$ se e solo se commuta con gli elementi dell'insieme di generatori $H \times \{e_K\} \cup \{e_H\} \times K$:
     \begin{itemize}
-        \item $(a, b)(e_H, b') = (a \varphi_b(e_H), b b') = (a, b b')$ e $(e_H, b')(a, b) = (\varphi_{b'}(a), b' b)$ coincidono per ogni $b' \in K$ se e solo se $b \in Z(K)$ e $a \in Fix(\varphi_{b'})$;
+        \item $(a, b)(e_H, b') = (a \varphi_b(e_H), b b') = (a, b b')$ e $(e_H, b')(a, b) = (\varphi_{b'}(a), b' b)$ coincidono per ogni $b' \in K$ se e solo se $b \in Z(K)$ e $a \in \Fix(\varphi_{b'})$;
         \item $(a, b)(a', e_K) = (a \varphi_b(a'), b)$ e $(a', e_K)(a, b) = (a' a, b) = (a a', b)$ coincidono per ogni $a' \in H$ se e solo se $b \in \ker(\varphi)$.
     \end{itemize}
-    Quindi $(h,k) \in Z(G) \Leftrightarrow h \in \bigcap_{k \in K} Fix(\varphi_k) \land k \in \ker(\varphi) \cap Z(K)$, come voluto.
+    Quindi $(h,k) \in Z(G) \Leftrightarrow h \in \bigcap_{k \in K} \Fix(\varphi_k) \land k \in \ker(\varphi) \cap Z(K)$, come voluto.
 \end{proof}
 \begin{proposition}{(*) intersezione dei $p$-Sylow con il centro}
     L'intersezione di un $p$-Sylow con il centro non dipende dal $p$-Sylow scelto.
